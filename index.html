@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<title>Uucky的小站</title>
+		<link rel="shortcut icon" href="http://uucky.me/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="Uucky的小站" />
+		<meta name="keywords" content="Uucky" />
+		<meta name="author" content="Printzheng" />
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link href='css.css' rel='stylesheet' type='./text/css'>
+		<script type="text/javascript" src="./js/modernizr.custom.79639.js"></script> 
+		<!--[if lte IE 8]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+	</head>
+	<body>
+		<div class="container">			
+			<header>
+			
+				<h1><span>Uucky的小站</span></h1>
+				<h2>ACG少C, Jubeat, Vocaloid, CS初心，95后，大一，温和，淘气，渣技术，纠结症，好奇宝宝 **Female** 名字读作/yuki/也可以叫我U酱w</h2>
+				
+				
+				<div class="support-note"><!-- let's check browser support with modernizr -->
+					<!--span class="no-cssanimations">CSS animations are not supported in your browser</span-->
+					<span class="no-csstransforms">您的浏览器不支持浏览本网页</span>
+					<!--span class="no-csstransforms3d">CSS 3D transforms are not supported in your browser</span-->
+					<span class="no-csstransitions">您的浏览器不支持浏览本网页</span>
+					<span class="note-ie">您的IE浏览器不支持浏览本网页</span>
+				</div>
+				
+			</header>
+			
+			<section class="main">
+			
+				<div id="sb-container" class="sb-container">
+				
+					<div>
+						<span class="sb-icon icon-emo-happy"></span>
+						<h4><span>Blog</span></h4>
+					</div>
+					<div>
+						<span class="sb-icon icon-rss"></span>
+						<h4><span>RSS</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-twitter"></span>
+						<h4><span>Twitter</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-tumblr"></span>
+						<h4><span>Tumblr</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-weibo"></span>
+						<h4><span>Weibo</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-googleplus"></span>
+						<h4><span>Google+</span></h4>
+					</div>	
+					<div>
+						<span class="sb-icon icon-youtube-play"></span>
+						<h4><span>Youtube</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-globe"></span>
+						<h4><span>Phonekr</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-github"></span>
+						<h4><span>Github</span></h4>											
+					</div>	
+					<div>
+						<span class="sb-icon icon-users"></span>
+						<h4><span>Friends</span></h4>											
+					</div>
+					<div>
+						<span class="sb-icon icon-picture"></span>
+						<h4><span>ALBUM</span></h4>											
+					</div>
+					<div>
+						<h4><span>About</span></h4>
+						<h5><span>My Blog</span></h5>											
+					</div>
+					
+					
+				</div><!-- sb-container -->
+				
+			</section>
+			
+        </div>
+        <script type="text/javascript" src="./jquery.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.swatchbook.js"></script>
+		<script type="text/javascript">
+var x=12;
+var l=new Array("http://blog.uucky.me","http://blog.uucky.me/feed/","https://twitter.com/Uucky_Lee","https://uucky.tumblr.com/","http://weibo.com/37109548","https://plus.google.com/u/0/113602061564897680896/","http://www.youtube.com/channel/UCwnRAHfoxjB1nv4ygAbmTMA","http://www.phonekr.com","https://github.com/Uucky","http://blog.uucky.me/friends","https://plus.google.com/u/0/photos/of/113602061564897680896","http://blog.uucky.me");//����ַ������
+$(document).ready(function(){
+	$("#sb-container div").live('click',function(){if($(this).index()==x){window.location=l[x];}else x=$(".ff-active").index();});
+});
+window.addEventListener("mousewheel",function(event){
+    event.preventDefault();
+	if (event.wheelDelta >= 120&&x>0)    
+	$("#sb-container div")[x-1].click();
+	else if (event.wheelDelta <= -120&&x<12)  
+	$("#sb-container div")[x+1].click();
+},false);
+			$(function() {
+			
+				$( '#sb-container' ).swatchbook();
+			
+			});
+		</script>
+    </body>
+</html>
